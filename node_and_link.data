@@ -1,28 +1,28 @@
-{syd, [[{with, cbr}, {length, 4}],
-       [{with, bne}, {length, 9}],
-       [{with, mel}, {length, 12}]]}.
-{cbr, [[{with, syd}, {length, 4}],
-       [{with, mel}, {length, 6}],
-       [{with, asp}, {length, 15}]]}.
-{bne, [[{with, syd}, {length, 9}],
-       [{with, cns}, {length, 22}],
-       [{with, asp}, {length, 31}]]}.
-{mel, [[{with, cbr}, {length, 6}],
-       [{with, adl}, {length, 8}],
-       [{with, syd}, {length, 12}]]}.
-{adl, [[{with, mel}, {length, 8}],
-       [{with, asp}, {length, 15}],
-       [{with, per}, {length, 32}]]}.
-{asp, [[{with, adl}, {length, 15}],
-       [{with, cbr}, {length, 15}],
-       [{with, drw}, {length, 15}],
-       [{with, cns}, {length, 24}],
-       [{with, bne}, {length, 31}]]}.
-{cns, [[{with, bne}, {length, 22}],
-       [{with, asp}, {length, 24}],
-       [{with, drw}, {length, 30}]]}.
-{drw, [[{with, asp}, {length, 15}],
-       [{with, cns}, {length, 30}],
-       [{with, per}, {length, 48}]]}.
-{per, [[{with, adl}, {length, 32}],
-       [{with, drw}, {length, 48}]]}.
+{syd, [{cbr, 4},
+       {bne, 9},
+       {mel, 12}]}.
+{cbr, [{syd, 4},
+       {mel, 6},
+       {asp, 15}]}.
+{bne, [{syd, 9},
+       {cns, 22},
+       {asp, 31}]}.
+{mel, [{cbr, 6},
+       {adl, 8},
+       {syd, 12}]}.
+{adl, [{mel, 8},
+       {asp, 15},
+       {per, 32}]}.
+{asp, [{adl, 15},
+       {cbr, 15},
+       {drw, 15},
+       {cns, 24},
+       {bne, 31}]}.
+{cns, [{bne, 22},
+       {asp, 24},
+       {drw, 30}]}.
+{drw, [{asp, 15},
+       {cns, 30},
+       {per, 48}]}.
+{per, [{adl, 32},
+       {drw, 48}]}.
