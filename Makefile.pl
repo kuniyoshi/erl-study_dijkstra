@@ -25,7 +25,6 @@ exit;
 
 __DATA__
 .PHONY: s self c compile
-.SUFFIX: erl beam
 
 c: compile
 compile: $(subst lib/,ebin/,$(addsuffix .beam,$(basename $(wildcard lib/*.erl))))
@@ -34,7 +33,7 @@ s: self
 self:
 	perl Makefile.pl
 
-[%  FOREACH erl IN erls -%]
+[% FOREACH erl IN erls -%]
 ebin/[% GET erl.basename.replace( ".erl", ".beam" ) %]: [% GET erl %]
 	erlc -I include -o ebin $<
-[%- END # FOREACH erl IN erls -%]
+[% END # FOREACH erl IN erls -%]
